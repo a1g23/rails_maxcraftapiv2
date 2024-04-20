@@ -79,4 +79,4 @@ test:
 #
 production:
   <<: *default
-  url: 'postgresql://neondb_owner:8UHmstRNd0TC@ep-spring-thunder-a5enxzr5.us-east-2.aws.neon.tech/rails_maxcraft_v2?sslmode=require'
+  url: <%= ENV["DATABASE_URL"] %>
